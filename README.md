@@ -59,4 +59,3 @@ Python
 Pylance
 ```
 
-# dotfiles
