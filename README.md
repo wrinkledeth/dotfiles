@@ -19,7 +19,7 @@
 [goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
 
 ```md
-# Complex Configurations
+# Karabiner Complex Configurations
 
 Tab to Option on press and hold
 Option + jkl; to arrow keys
