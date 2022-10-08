@@ -118,4 +118,6 @@ export PATH="$PATH:/Users/mike/.foundry/bin"
 # Aliases
 alias python='python3'
 alias z='code ~/.zshrc'
+alias e='evcxr'
+alias y='youtube-dl'
 
