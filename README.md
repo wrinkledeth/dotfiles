@@ -31,7 +31,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 plugins=(other plugins... zsh-autosuggestions)
 ```
 
-Syntax Highlighting 
+Syntax Highlighting
 
 ```bash
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
@@ -50,15 +50,12 @@ plugins=( [plugins...] zsh-history-substring-search)
 
 ```
 
-
-
-
-
 ---
 
 ## [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
 
 [goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
+[json -> goku](https://github.com/yqrashawn/GokuRakuJoudo/issues/34) reference this
 
 ```md
 # Karabiner Complex Configurations
@@ -68,7 +65,8 @@ Option + jkl; to arrow keys
 Caps Lock to Escape on tap, Control on press and hold
 Shift to Parens on tap
 Disable Cmd+H Hide
-Quit application by pressing Cmd+Q twice    
+Quit application by pressing Cmd+Q twice  
+= + delete simultanously = forward delete  
 ```
 
 ---
