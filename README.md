@@ -14,6 +14,48 @@
 
 ---
 
+## [Zsh]
+
+Oh My Zsh
+
+```bash
+# Instsall Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+
+Auto-suggestions
+
+```bash
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+# Add the plugin to the list of plugins for Oh My Zsh to load (inside ~/.zshrc):
+plugins=(other plugins... zsh-autosuggestions)
+```
+
+Syntax Highlighting 
+
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+#Activate the plugin in ~/.zshrc:
+plugins=( [plugins...] zsh-syntax-highlighting)
+
+# [Catppuccin](https://github.com/catppuccin/zsh-syntax-highlighting) (wait for macchiato to come out)
+```
+
+History Substring Search
+
+```bash
+git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-history-substring-search
+#Activate the plugin in ~/.zshrc:
+plugins=( [plugins...] zsh-history-substring-search)
+
+```
+
+
+
+
+
+---
+
 ## [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
 
 [goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
@@ -21,12 +63,12 @@
 ```md
 # Karabiner Complex Configurations
 
-Tab to Option on press and hold
+Tab to Option on press and hold (map change workspace to option + number)
 Option + jkl; to arrow keys
 Caps Lock to Escape on tap, Control on press and hold
 Shift to Parens on tap
 Disable Cmd+H Hide
-Quit application by pressing Cmd+Q twice
+Quit application by pressing Cmd+Q twice    
 ```
 
 ---
