@@ -16,6 +16,13 @@
 
 ## [Zsh]
 
+Symlink .zshrc:
+
+```bash
+mv ~/.zshrc ~/.config/.zshrc
+ln -s ~/.config/.zshrc .zshrc
+```
+
 Oh My Zsh
 
 ```bash
