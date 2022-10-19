@@ -64,6 +64,8 @@ plugins=( [plugins...] zsh-history-substring-search)
 [goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
 [json -> goku](https://github.com/yqrashawn/GokuRakuJoudo/issues/34) reference this
 
+brew install yqrashawn/goku/goku
+
 ```md
 # Karabiner Complex Configurations
 
@@ -74,11 +76,12 @@ Shift to Parens on tap
 Disable Cmd+H Hide
 Quit application by pressing Cmd+Q twice  
 = + delete simultanously = forward delete  
+Map = to fn on hold
 ```
 
 ---
 
-## Vscode Extension List
+## Vscode Extension List)
 
 ```md
 # General
@@ -105,4 +108,3 @@ Solidity Language and Theme
 Python
 Pylance
 ```
-
