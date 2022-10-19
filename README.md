@@ -20,6 +20,10 @@
 
 code /Users/mike/Library/Application Support/Firefox/Profiles/2dsugf5f.default-release/chrome/userChrome.css
 
+## Phoenix
+
+code /Users/mike/.phoenix.js
+
 
 ## [Zsh]
 
