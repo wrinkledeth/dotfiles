@@ -14,6 +14,13 @@
 
 ---
 
+## Firefox
+
+[cascade theme](https://github.com/andreasgrafen/cascade)
+
+code /Users/mike/Library/Application Support/Firefox/Profiles/2dsugf5f.default-release/chrome/userChrome.css
+
+
 ## [Zsh]
 
 Symlink .zshrc:
