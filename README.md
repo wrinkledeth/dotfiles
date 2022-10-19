@@ -18,9 +18,9 @@
 
 [cascade theme](https://github.com/andreasgrafen/cascade)
 
-code /Users/mike/Library/Application Support/Firefox/Profiles/2dsugf5f.default-release/chrome/userChrome.css
+code /Users/mike/Library/Application\ Support/Firefox/Profiles/2dsugf5f.default-release/chrome/userChrome.css
 
-code /Users/mike/Library/Application Support/Firefox/Profiles/2dsugf5f.default-release/chrome/includes/cascade-config.css
+code /Users/mike/Library/Application\ Support/Firefox/Profiles/2dsugf5f.default-release/chrome/includes/cascade-config.css
 
 ## Phoenix
 
