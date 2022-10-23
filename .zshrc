@@ -29,17 +29,19 @@ export PATH="$PATH:/Users/mike/.foundry/bin"
 
 # Aliases
 alias python='python3'
-alias z='code ~/.zshrc'
 alias e='evcxr'
 alias y='yt-dlp'
-alias i='instalooter post'
+
+alias z='code ~/.zshrc'
+alias ka='code /Users/mike/.config/karabiner/karabiner.json'
+
+alias ggg='git commit -am "latest";git push origin main'
+alias ki='kitty +kitten icat'
+
 alias f='cd /Users/mike/dev/foam'
 alias c='cd /Users/mike/.config'
 alias p='cd /Users/mike/dev/pr'
 alias r='cd /Users/mike/dev/rust'
 alias sc='cd /Users/mike/dev/sc'    
-alias ggg='git commit -am "latest";git push origin main'
-alias ki='kitty +kitten icat'
-alias ka='code /Users/mike/.config/karabiner/karabiner.json'
-
-    
+alias rpr='cd /Users/mike/dev/sc/rpr'
+alias rc='cd /Users/mike/dev/pr/randcast_contracts'

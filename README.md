@@ -1,5 +1,11 @@
 # M2 Air Dot Files
 
+## VSCode Keyboard Layout Fix
+
+[Disable Alt Special Characters](https://stackoverflow.com/questions/11876485/how-to-disable-generating-special-characters-when-pressing-the-alta-optiona)
+
+cp ~/Downloads/USKeylayout_custom_no_alt.keylayout ~/Library/Keyboard\ Layouts/
+
 ## [Catppuccin Theme](https://github.com/catppuccin/)
 
 ^ Macchiato color table
@@ -21,6 +27,10 @@
 code /Users/mike/Library/Application\ Support/Firefox/Profiles/2dsugf5f.default-release/chrome/userChrome.css
 
 code /Users/mike/Library/Application\ Support/Firefox/Profiles/2dsugf5f.default-release/chrome/includes/cascade-config.css
+
+Enable multi container
+[install retainer](https://addons.mozilla.org/en-US/firefox/addon/retainer/)
+use karabiner-elements to map Cmd + T -> Option + shift + T
 
 ## Phoenix
 
