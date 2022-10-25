@@ -34,6 +34,7 @@ alias y='yt-dlp'
 
 alias z='code ~/.zshrc'
 alias ka='code /Users/mike/.config/karabiner/karabiner.json'
+alias ph='code /Users/mike/.config/.phoenix.js'
 
 alias ggg='git commit -am "latest";git push origin main'
 alias ki='kitty +kitten icat'

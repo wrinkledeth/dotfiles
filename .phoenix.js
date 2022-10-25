@@ -18,6 +18,13 @@ const topHalf = {
   bottom: 0.5,
 };
 
+const bottomHalf = {
+  left: 0,
+  top: 0.5,
+  right: 0,
+  bottom: 0,
+};
+
 const leftHalf = {
   left: 0,
   top: 0,
@@ -51,6 +58,7 @@ quakeApp({
   key: "`",
   modifiers: ["cmd"],
   appName: "kitty",
+  // position: bottomHalf,
   position: topHalf,
   followsMouse: true,
   hideOnBlur: true,
@@ -79,38 +87,54 @@ quakeApp({
   followsMouse: true,
   hideOnBlur: false,
 });
-// quakeApp({
-//   key: "s",
-//   modifiers: ["alt"],
-//   appName: "Slack",
-//   position: leftHalf,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
-// quakeApp({
-//   key: "d",
-//   modifiers: ["alt"],
-//   appName: "Discord",
-//   position: leftHalf,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
-// quakeApp({
-//   key: "m",
-//   modifiers: ["alt"],
-//   appName: "Messages",
-//   position: lowerLeftHalf,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
-// quakeApp({
-//   key: "p",
-//   modifiers: ["alt"],
-//   appName: "Spotify",
-//   position: full,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
+quakeApp({
+  key: "s",
+  modifiers: ["alt"],
+  appName: "Slack",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "i",
+  modifiers: ["alt"],
+  appName: "Signal",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "f",
+  modifiers: ["alt"],
+  appName: "Finder",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "d",
+  modifiers: ["alt"],
+  appName: "Discord",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "m",
+  modifiers: ["alt"],
+  appName: "Messages",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "p",
+  modifiers: ["alt"],
+  appName: "Spotify",
+  position: full``,
+  followsMouse: true,
+  hideOnBlur: false,
+});
 // quakeApp({
 //   key: "r",
 //   modifiers: ["alt"],
