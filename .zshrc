@@ -46,3 +46,6 @@ alias r='cd /Users/mike/dev/rust'
 alias sc='cd /Users/mike/dev/sc'    
 alias rpr='cd /Users/mike/dev/sc/rpr'
 alias rc='cd /Users/mike/dev/pr/randcast_contracts'
+
+alias pve='kitty +kitten ssh root@192.168.1.125'
+alias gpu='kitty +kitten ssh zen@192.168.1.186'

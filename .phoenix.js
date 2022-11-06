@@ -88,7 +88,7 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "s",
+  key: "c",
   modifiers: ["alt"],
   appName: "Slack",
   position: leftHalf,
@@ -96,7 +96,7 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "i",
+  key: "s",
   modifiers: ["alt"],
   appName: "Signal",
   position: leftHalf,
@@ -131,7 +131,23 @@ quakeApp({
   key: "p",
   modifiers: ["alt"],
   appName: "Spotify",
-  position: full``,
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "b",
+  modifiers: ["alt"],
+  appName: "Books",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "v",
+  modifiers: ["alt"],
+  appName: "VMware Horizon Client",
+  position: rightHalf,
   followsMouse: true,
   hideOnBlur: false,
 });
