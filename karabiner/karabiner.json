@@ -426,7 +426,7 @@
                                 },
                                 "to": [
                                     {
-                                        "shell_command": "/opt/homebrew/bin/python3 /Users/mike/.config/copy_dict.py"
+                                        "shell_command": "/opt/homebrew/bin/python3 /Users/zen/.config/copy_dict.py"
                                     }
                                 ],
                                 "type": "basic"

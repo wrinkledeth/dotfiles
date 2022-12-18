@@ -130,4 +130,15 @@ Solidity Language and Theme
 # Python
 Python
 Pylance
+
+# Mac
+Customize UI
+```json
+{
+  "window.titleBarStyle": "native",
+  "customizeUI.titleBar": "inline",
+  "customizeUI.activityBar": "wide"
+}
+```
+
 ```
