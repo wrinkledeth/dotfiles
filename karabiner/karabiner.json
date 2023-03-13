@@ -16,40 +16,40 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
-                    {
-                        "description": "Map Command+T to Alt+Shift+C in Firefox",
-                        "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "bundle_identifiers": [
-                                            "org.mozilla.firefox"
-                                        ],
-                                        "type": "frontmost_application_if"
-                                    }
-                                ],
-                                "from": {
-                                    "key_code": "t",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_command"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "c",
-                                        "modifiers": [
-                                            "left_shift",
-                                            "left_option"
-                                        ],
-                                        "repeat": true
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
+                    // {
+                    //     "description": "Map Command+T to Alt+Shift+C in Firefox",
+                    //     "manipulators": [
+                    //         {
+                    //             "conditions": [
+                    //                 {
+                    //                     "bundle_identifiers": [
+                    //                         "org.mozilla.firefox"
+                    //                     ],
+                    //                     "type": "frontmost_application_if"
+                    //                 }
+                    //             ],
+                    //             "from": {
+                    //                 "key_code": "t",
+                    //                 "modifiers": {
+                    //                     "mandatory": [
+                    //                         "left_command"
+                    //                     ]
+                    //                 }
+                    //             },
+                    //             "to": [
+                    //                 {
+                    //                     "key_code": "c",
+                    //                     "modifiers": [
+                    //                         "left_shift",
+                    //                         "left_option"
+                    //                     ],
+                    //                     "repeat": true
+                    //                 }
+                    //             ],
+                    //             "type": "basic"
+                    //         }
+                    //     ]
+                    // },
                     {
                         "description": "Tab to option on press and hold.",
                         "manipulators": [
@@ -381,7 +381,7 @@
                                 },
                                 "to": [
                                     {
-                                        "key_code": "caps_lock"
+                                        "key_code": "f13"
                                     }
                                 ],
                                 "type": "basic"

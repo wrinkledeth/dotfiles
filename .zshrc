@@ -31,23 +31,31 @@ export PATH="$PATH:/Users/zen/.foundry/bin"
 alias python='python3'
 alias e='evcxr'
 alias y='yt-dlp'
+alias ggg='git commit -am "latest";git push origin main'
+alias ki='kitty +kitten icat'
 
+# Config Files
 alias z='code ~/.zshrc'
 alias ka='code /Users/zen/.config/karabiner/karabiner.json'
 alias ph='code /Users/zen/.config/.phoenix.js'
 
-alias ggg='git commit -am "latest";git push origin main'
-alias ki='kitty +kitten icat'
-
+# Change Directories 
 alias f='cd /Users/zen/dev/foam'
 alias c='cd /Users/zen/.config'
 alias p='cd /Users/zen/dev/pr'
 alias r='cd /Users/zen/dev/rust'
-alias sc='cd /Users/zen/dev/sc'    
+alias sc='cd /Users/zen/dev/sc'
 alias rpr='cd /Users/zen/dev/sc/rpr'
-alias rc='cd /Users/zen/dev/pr/randcast_contracts'
+alias rc='cd /Users/zen/dev/pr/BLS-TSS-Network/contracts'
 
-#alias pve='kitty +kitten ssh root@192.168.1.125'
-#alias gpu='kitty +kitten ssh zen@192.168.1.186'
-# alias jump='kitty +kitten ssh zen@192.168.1.108'
-#alias jump='kitty +kitten ssh zen@68.195.133.28 -p 32666'
+# Forge
+# alias coverage='forge coverage --report lcov'
+# alias ft='forge test --watch -vvv --match-test'
+# alias fw='forge test --watch'
+alias fw="forge test --gas-price 1000000000 --watch --run-all"
+alias ft="forge test --gas-price 1000000000 --watch -vvv --match-test"
+alias tt="forge test --gas-price 1000000000 --match-contract SolidityTest -vvv -w"
+alias coverage="forge coverage --gas-price 1000000000 --report lcov"
+
+# PROMPT="$PROMPT
+# %F{red}∴%f "

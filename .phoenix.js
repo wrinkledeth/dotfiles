@@ -59,7 +59,7 @@ quakeApp({
   modifiers: ["cmd"],
   appName: "kitty",
   // position: bottomHalf,
-  position: topHalf,
+  position: full,
   followsMouse: true,
   hideOnBlur: true,
 });
@@ -72,7 +72,7 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "2",
+  key: "f",
   modifiers: ["alt"],
   appName: "Firefox",
   position: full,
@@ -80,7 +80,7 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "3",
+  key: "a",
   modifiers: ["alt"],
   appName: "Anki",
   position: full,
@@ -88,69 +88,69 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "c",
-  modifiers: ["alt"],
-  appName: "Slack",
-  position: leftHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
   key: "s",
   modifiers: ["alt"],
   appName: "Signal",
-  position: leftHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
-  key: "f",
-  modifiers: ["alt"],
-  appName: "Finder",
-  position: leftHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
-  key: "d",
-  modifiers: ["alt"],
-  appName: "Discord",
-  position: leftHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
-  key: "m",
-  modifiers: ["alt"],
-  appName: "Messages",
-  position: leftHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
-  key: "p",
-  modifiers: ["alt"],
-  appName: "Spotify",
   position: full,
   followsMouse: true,
   hideOnBlur: false,
 });
-quakeApp({
-  key: "b",
-  modifiers: ["alt"],
-  appName: "Books",
-  position: full,
-  followsMouse: true,
-  hideOnBlur: false,
-});
-quakeApp({
-  key: "v",
-  modifiers: ["alt"],
-  appName: "VMware Horizon Client",
-  position: rightHalf,
-  followsMouse: true,
-  hideOnBlur: false,
-});
+// quakeApp({
+//   key: "c",
+//   modifiers: ["alt"],
+//   appName: "Slack",
+//   position: leftHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "f",
+//   modifiers: ["alt"],
+//   appName: "Finder",
+//   position: leftHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "d",
+//   modifiers: ["alt"],
+//   appName: "Discord",
+//   position: leftHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "m",
+//   modifiers: ["alt"],
+//   appName: "Messages",
+//   position: leftHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "p",
+//   modifiers: ["alt"],
+//   appName: "Spotify",
+//   position: full,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "b",
+//   modifiers: ["alt"],
+//   appName: "Books",
+//   position: full,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "v",
+//   modifiers: ["alt"],
+//   appName: "VMware Horizon Client",
+//   position: rightHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
 // quakeApp({
 //   key: "r",
 //   modifiers: ["alt"],
