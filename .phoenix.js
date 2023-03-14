@@ -54,17 +54,51 @@ const full = {
 };
 
 // the actual applications
-quakeApp({
-  key: "`",
-  modifiers: ["cmd"],
-  appName: "kitty",
-  // position: bottomHalf,
-  position: full,
-  followsMouse: true,
-  hideOnBlur: true,
-});
+// quakeApp({
+//   key: "`",
+//   modifiers: ["cmd"],
+//   appName: "kitty",
+//   position: rightHalf,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+
 quakeApp({
   key: "1",
+  modifiers: ["alt"],
+  appName: "kitty",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "2",
+  modifiers: ["alt"],
+  appName: "kitty",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "3",
+  modifiers: ["alt"],
+  appName: "kitty",
+  position: rightHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+
+
+quakeApp({
+  key: "4",
+  modifiers: ["alt"],
+  appName: "Code",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "5",
   modifiers: ["alt"],
   appName: "Code",
   position: full,
@@ -72,7 +106,24 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "f",
+  key: "6",
+  modifiers: ["alt"],
+  appName: "Code",
+  position: rightHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+
+quakeApp({
+  key: "7",
+  modifiers: ["alt"],
+  appName: "Firefox",
+  position: leftHalf,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "8",
   modifiers: ["alt"],
   appName: "Firefox",
   position: full,
@@ -80,21 +131,30 @@ quakeApp({
   hideOnBlur: false,
 });
 quakeApp({
-  key: "a",
+  key: "9",
   modifiers: ["alt"],
-  appName: "Anki",
-  position: full,
+  appName: "Firefox",
+  position: rightHalf,
   followsMouse: true,
   hideOnBlur: false,
 });
-quakeApp({
-  key: "s",
-  modifiers: ["alt"],
-  appName: "Signal",
-  position: full,
-  followsMouse: true,
-  hideOnBlur: false,
-});
+
+// quakeApp({
+//   key: "a",
+//   modifiers: ["alt"],
+//   appName: "Anki",
+//   position: full,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
+// quakeApp({
+//   key: "s",
+//   modifiers: ["alt"],
+//   appName: "Signal",
+//   position: full,
+//   followsMouse: true,
+//   hideOnBlur: false,
+// });
 // quakeApp({
 //   key: "c",
 //   modifiers: ["alt"],
