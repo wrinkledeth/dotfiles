@@ -115,7 +115,7 @@
                     // },
                     // ! Cycle Window Combo
                     {
-                        "description": "`1 combo -> alt + ~ (switch between same app)",
+                        "description": "dg combo -> alt + ~ (switch between same app)",
                         "manipulators": [
                             {
                                 "from": {
@@ -126,10 +126,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "grave_accent_and_tilde"
+                                            "key_code": "d"
                                         },
                                         {
-                                            "key_code": "1"
+                                            "key_code": "g"
                                         }
                                     ]
                                 },
