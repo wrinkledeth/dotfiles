@@ -82,37 +82,37 @@
                         ]
                     },
                     // ! VSCODE COMMENTS
-                    {
-                        "description": "km combo -> ctrl + / (vscode commment)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "k"
-                                        },
-                                        {
-                                            "key_code": "m"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "slash",
-                                        "modifiers": [
-                                            "command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
+                    // {
+                    //     "description": "km combo -> ctrl + / (vscode commment)",
+                    //     "manipulators": [
+                    //         {
+                    //             "from": {
+                    //                 "modifiers": {
+                    //                     "optional": [
+                    //                         "any"
+                    //                     ]
+                    //                 },
+                    //                 "simultaneous": [
+                    //                     {
+                    //                         "key_code": "k"
+                    //                     },
+                    //                     {
+                    //                         "key_code": "m"
+                    //                     }
+                    //                 ]
+                    //             },
+                    //             "to": [
+                    //                 {
+                    //                     "key_code": "slash",
+                    //                     "modifiers": [
+                    //                         "command"
+                    //                     ]
+                    //                 }
+                    //             ],
+                    //             "type": "basic"
+                    //         }
+                    //     ]
+                    // },
                     // ! Cycle Window Combo
                     {
                         "description": "`1 combo -> alt + ~ (switch between same app)",
