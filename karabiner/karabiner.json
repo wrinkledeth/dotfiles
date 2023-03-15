@@ -9,17 +9,113 @@
         {
             "complex_modifications": {
                 "parameters": {
-                    "basic.simultaneous_threshold_milliseconds": 50,
+                    "basic.simultaneous_threshold_milliseconds": 20, // default 50
                     "basic.to_delayed_action_delay_milliseconds": 500,
                     "basic.to_if_alone_timeout_milliseconds": 1000,
                     "basic.to_if_held_down_threshold_milliseconds": 500,
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
-                    // ! foward / back combo
+                    // ! TAB forward and back 
+                    {
+                        "description": "UI to Cmd + Option + Right Arrow",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "u"
+                                        },
+                                        {
+                                            "key_code": "i"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "command",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "IO to Cmd + Option + Right Arrow",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "i"
+                                        },
+                                        {
+                                            "key_code": "o"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "command",
+                                            "left_option"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    // ! VSCODE COMMENTS
+                    {
+                        "description": "km combo -> ctrl + / (vscode commment)",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "k"
+                                        },
+                                        {
+                                            "key_code": "m"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "slash",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
                     // ! Cycle Window Combo
                     {
-                        "description": ";+1 combo -> alt + ~ (switch between same app)",
+                        "description": "`1 combo -> alt + ~ (switch between same app)",
                         "manipulators": [
                             {
                                 "from": {
@@ -148,7 +244,7 @@
                     },
                     // ! VSCODE COMBOS
                     {
-                        "description": "as combo -> alt+4 (vscode left)",
+                        "description": "df combo -> alt+4 (vscode left)",
                         "manipulators": [
                             {
                                 "from": {
@@ -159,10 +255,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "a"
+                                            "key_code": "d"
                                         },
                                         {
-                                            "key_code": "s"
+                                            "key_code": "f"
                                         }
                                     ]
                                 },
@@ -179,7 +275,7 @@
                         ]
                     },
                     {
-                        "description": "sl combo -> alt+5 (vscode full)",
+                        "description": "sd combo -> alt+5 (vscode full)",
                         "manipulators": [
                             {
                                 "from": {
@@ -193,7 +289,7 @@
                                             "key_code": "s"
                                         },
                                         {
-                                            "key_code": "l"
+                                            "key_code": "d"
                                         }
                                     ]
                                 },
@@ -242,7 +338,7 @@
                     },
                     // ! KITTY COMBOS
                     {
-                        "description": "df combo -> alt+2 (kitty left)",
+                        "description": "as combo -> alt+2 (kitty left)",
                         "manipulators": [
                             {
                                 "from": {
@@ -253,10 +349,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "d"
+                                            "key_code": "a"
                                         },
                                         {
-                                            "key_code": "f"
+                                            "key_code": "s"
                                         }
                                     ]
                                 },
@@ -366,41 +462,81 @@
                             }
                         ]
                     },
+                    // {
+                    //     "description": "sd combo -> alt+7 (firefox left)",
+                    //     "manipulators": [
+                    //         {
+                    //             "from": {
+                    //                 "modifiers": {
+                    //                     "optional": [
+                    //                         "any"
+                    //                     ]
+                    //                 },
+                    //                 "simultaneous": [
+                    //                     {
+                    //                         "key_code": "s"
+                    //                     },
+                    //                     {
+                    //                         "key_code": "d"
+                    //                     }
+                    //                 ]
+                    //             },
+                    //             "to": [
+                    //                 {
+                    //                     "key_code": "7",
+                    //                     "modifiers": [
+                    //                         "left_option"
+                    //                     ]
+                    //                 }
+                    //             ],
+                    //             "type": "basic"
+                    //         }
+                    //     ]
+                    // },
+                    // {
+                    //     "description": "dk combo -> alt+8 (firefox full)",
+                    //     "manipulators": [
+                    //         {
+                    //             "from": {
+                    //                 "modifiers": {
+                    //                     "optional": [
+                    //                         "any"
+                    //                     ]
+                    //                 },
+                    //                 "simultaneous": [
+                    //                     {
+                    //                         "key_code": "d"
+                    //                     },
+                    //                     {
+                    //                         "key_code": "k"
+                    //                     }
+                    //                 ]
+                    //             },
+                    //             "to": [
+                    //                 {
+                    //                     "key_code": "8",
+                    //                     "modifiers": [
+                    //                         "left_option"
+                    //                     ]
+                    //                 }
+                    //             ],
+                    //             "type": "basic"
+                    //         }
+                    //     ]
+                    // },
+                    // ! Forward / Back Combos VSCODE
                     {
-                        "description": "sd combo -> alt+7 (firefox right)",
+                        "description": "we combo -> (vscode back)",
                         "manipulators": [
                             {
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "s"
-                                        },
-                                        {
-                                            "key_code": "d"
-                                        }
-                                    ]
-                                },
-                                "to": [
+                                "conditions": [
                                     {
-                                        "key_code": "7",
-                                        "modifiers": [
-                                            "left_option"
-                                        ]
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_if"
                                     }
                                 ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
-                        "description": "dk combo -> alt+8 (firefox full)",
-                        "manipulators": [
-                            {
                                 "from": {
                                     "modifiers": {
                                         "optional": [
@@ -409,42 +545,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "d"
+                                            "key_code": "w"
                                         },
                                         {
-                                            "key_code": "k"
-                                        }
-                                    ]
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "8",
-                                        "modifiers": [
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    // ! Forward / Back Combos
-                    {
-                        "description": "dc combo -> (vscode back)",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "d"
-                                        },
-                                        {
-                                            "key_code": "c"
+                                            "key_code": "e"
                                         }
                                     ]
                                 },
@@ -464,6 +568,14 @@
                         "description": "dv combo -> (vscode forward)",
                         "manipulators": [
                             {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
                                 "from": {
                                     "modifiers": {
                                         "optional": [
@@ -472,10 +584,10 @@
                                     },
                                     "simultaneous": [
                                         {
-                                            "key_code": "d"
+                                            "key_code": "e"
                                         },
                                         {
-                                            "key_code": "v"
+                                            "key_code": "r"
                                         }
                                     ]
                                 },
@@ -491,44 +603,86 @@
                             }
                         ]
                     },
-                    // ! END COMBO
-                    // ! END COMBO
-                    // ! END COMBO
-                    // {
-                    //     "description": "Map Command+T to Alt+Shift+C in Firefox",
-                    //     "manipulators": [
-                    //         {
-                    //             "conditions": [
-                    //                 {
-                    //                     "bundle_identifiers": [
-                    //                         "org.mozilla.firefox"
-                    //                     ],
-                    //                     "type": "frontmost_application_if"
-                    //                 }
-                    //             ],
-                    //             "from": {
-                    //                 "key_code": "t",
-                    //                 "modifiers": {
-                    //                     "mandatory": [
-                    //                         "left_command"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "c",
-                    //                     "modifiers": [
-                    //                         "left_shift",
-                    //                         "left_option"
-                    //                     ],
-                    //                     "repeat": true
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
-                    // {
+                    // ! foward / back combo FIREFOX
+                    {
+                        "description": "we to Firefox Back",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "w"
+                                        },
+                                        {
+                                            "key_code": "e"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "er to Firefox forward",
+                        "manipulators": [
+                            {
+                                "conditions": [
+                                    {
+                                        "bundle_identifiers": [
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_if"
+                                    }
+                                ],
+                                "from": {
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    },
+                                    "simultaneous": [
+                                        {
+                                            "key_code": "e"
+                                        },
+                                        {
+                                            "key_code": "r"
+                                        }
+                                    ]
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_arrow",
+                                        "modifiers": [
+                                            "command"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    // ! tab option
                     //     "description": "Tab to option on press and hold.",
                     //     "manipulators": [
                     //         {
@@ -580,122 +734,6 @@
                             }
                         ]
                     },
-                    // {
-                    //     "description": "Better Shifting: Parentheses on shift keys",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "left_shift"
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "left_shift"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "9",
-                    //                     "modifiers": [
-                    //                         "left_shift"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         },
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "right_shift"
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "right_shift"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "0",
-                    //                     "modifiers": [
-                    //                         "right_shift"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
-                    // {
-                    //     "description": "Better Shifting: Shift rolls",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "left_shift",
-                    //                 "modifiers": {
-                    //                     "mandatory": [
-                    //                         "right_shift"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "left_shift"
-                    //                 },
-                    //                 {
-                    //                     "key_code": "right_shift"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "0",
-                    //                     "modifiers": [
-                    //                         "right_shift",
-                    //                         "left_shift"
-                    //                     ]
-                    //                 },
-                    //                 {
-                    //                     "key_code": "9",
-                    //                     "modifiers": [
-                    //                         "right_shift",
-                    //                         "left_shift"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         },
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "right_shift",
-                    //                 "modifiers": {
-                    //                     "mandatory": [
-                    //                         "left_shift"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "right_shift"
-                    //                 },
-                    //                 {
-                    //                     "key_code": "left_shift"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "9",
-                    //                     "modifiers": [
-                    //                         "right_shift"
-                    //                     ]
-                    //                 },
-                    //                 {
-                    //                     "key_code": "0",
-                    //                     "modifiers": [
-                    //                         "right_shift"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
                     {
                         "description": "Disable Cmd+H Hide (rev 2)",
                         "manipulators": [
@@ -741,131 +779,6 @@
                             }
                         ]
                     },
-                    // {
-                    //     "description": "Change = to Fn on press and hold",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "equal_sign",
-                    //                 "modifiers": {
-                    //                     "optional": [
-                    //                         "any"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "fn"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "equal_sign"
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
-                    // {
-                    //     "description": "Change hyphen to Fn on press and hold",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "hyphen",
-                    //                 "modifiers": {
-                    //                     "optional": [
-                    //                         "any"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "fn"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "hyphen"
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
-                    // {
-                    //     "description": "Change ` to Fn on press and hold",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "grave_accent_and_tilde",
-                    //                 "modifiers": {
-                    //                     "optional": [
-                    //                         "any"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "fn"
-                    //                 }
-                    //             ],
-                    //             "to_if_alone": [
-                    //                 {
-                    //                     "key_code": "grave_accent_and_tilde"
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
-                    // {
-                    //     "description": "Make cmd+q comb just turn the caps lock key, and make cmd+shift+q map to cmd+q (quit app)",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "q",
-                    //                 "modifiers": {
-                    //                     "mandatory": [
-                    //                         "command",
-                    //                         "left_shift"
-                    //                     ],
-                    //                     "optional": [
-                    //                         "caps_lock"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "q",
-                    //                     "modifiers": [
-                    //                         "command"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         },
-                    //         {
-                    //             "from": {
-                    //                 "key_code": "q",
-                    //                 "modifiers": {
-                    //                     "mandatory": [
-                    //                         "command"
-                    //                     ],
-                    //                     "optional": [
-                    //                         "caps_lock"
-                    //                     ]
-                    //                 }
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "f13"
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
                     {
                         "description": "Option+q copies to clipboard",
                         "manipulators": [
@@ -911,15 +824,42 @@
                             }
                         ]
                     },
+                    // ! Arrow gains
+                    // {
+                    //     "description": "Change space to Fn on press and hold",
+                    //     "manipulators": [
+                    //         {
+                    //             "from": {
+                    //                 "key_code": "spacebar",
+                    //                 "modifiers": {
+                    //                     "optional": [
+                    //                         "any"
+                    //                     ]
+                    //                 }
+                    //             },
+                    //             "to": [
+                    //                 {
+                    //                     "key_code": "fn"
+                    //                 }
+                    //             ],
+                    //             "to_if_alone": [
+                    //                 {
+                    //                     "key_code": "spacebar"
+                    //                 }
+                    //             ],
+                    //             "type": "basic"
+                    //         }
+                    //     ]
+                    // },
                     {
-                        "description": "Change control+jkl; to arrow keys",
+                        "description": "Change fn+jkl; to arrow keys",
                         "manipulators": [
                             {
                                 "from": {
                                     "key_code": "j",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "fn"
                                         ],
                                         "optional": [
                                             "any"
@@ -938,7 +878,7 @@
                                     "key_code": "k",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "fn"
                                         ],
                                         "optional": [
                                             "any"
@@ -957,7 +897,7 @@
                                     "key_code": "l",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "fn"
                                         ],
                                         "optional": [
                                             "any"
@@ -976,7 +916,7 @@
                                     "key_code": "semicolon",
                                     "modifiers": {
                                         "mandatory": [
-                                            "left_control"
+                                            "fn"
                                         ],
                                         "optional": [
                                             "any"
