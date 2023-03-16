@@ -16,8 +16,7 @@
                     "mouse_motion_to_scroll.speed": 100
                 },
                 "rules": [
-                    // ! TAB forward and back 
-                    // ! CUSTOM SHIT FOR KITTY
+                    // ! TAB forward and back: Kitty
                     {
                         "description": "we to Ctrl + Shift + Left Arrow (KITTY)",
                         "manipulators": [
@@ -98,7 +97,7 @@
                             }
                         ]
                     },
-                    // ! FF and Vscode
+                    // ! TAB Forward / Back: Firefox and Vscode
                     {
                         "description": "we to Cmd + Option + Left Arrow",
                         "manipulators": [
@@ -163,7 +162,7 @@
                             }
                         ]
                     },
-                    // ! Forward / Back Combos VSCODE
+                    // ! Forward / Back: VSCODE
                     {
                         "description": "ui combo -> (vscode back)",
                         "manipulators": [
@@ -242,7 +241,7 @@
                             }
                         ]
                     },
-                    // ! foward / back combo FIREFOX
+                    // ! Forward / Back:  FIREFOX
                     {
                         "description": "ui to Firefox Back",
                         "manipulators": [
@@ -321,38 +320,6 @@
                             }
                         ]
                     },
-                    // ! VSCODE COMMENTS
-                    // {
-                    //     "description": "km combo -> ctrl + / (vscode commment)",
-                    //     "manipulators": [
-                    //         {
-                    //             "from": {
-                    //                 "modifiers": {
-                    //                     "optional": [
-                    //                         "any"
-                    //                     ]
-                    //                 },
-                    //                 "simultaneous": [
-                    //                     {
-                    //                         "key_code": "k"
-                    //                     },
-                    //                     {
-                    //                         "key_code": "m"
-                    //                     }
-                    //                 ]
-                    //             },
-                    //             "to": [
-                    //                 {
-                    //                     "key_code": "slash",
-                    //                     "modifiers": [
-                    //                         "command"
-                    //                     ]
-                    //                 }
-                    //             ],
-                    //             "type": "basic"
-                    //         }
-                    //     ]
-                    // },
                     // ! Cycle Window Combo
                     {
                         "description": "dg combo -> alt + ~ (switch between same app)",
