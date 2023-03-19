@@ -139,30 +139,30 @@ quakeApp({
   hideOnBlur: false,
 });
 
-// quakeApp({
-//   key: "a",
-//   modifiers: ["alt"],
-//   appName: "Anki",
-//   position: full,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
-// quakeApp({
-//   key: "s",
-//   modifiers: ["alt"],
-//   appName: "Signal",
-//   position: full,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
-// quakeApp({
-//   key: "c",
-//   modifiers: ["alt"],
-//   appName: "Slack",
-//   position: leftHalf,
-//   followsMouse: true,
-//   hideOnBlur: false,
-// });
+quakeApp({
+  key: "a",
+  modifiers: ["alt"],
+  appName: "Anki",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "-",
+  modifiers: ["alt"],
+  appName: "Signal",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "=",
+  modifiers: ["alt"],
+  appName: "Slack",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
 // quakeApp({
 //   key: "f",
 //   modifiers: ["alt"],

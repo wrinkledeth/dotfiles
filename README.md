@@ -1,5 +1,43 @@
 # M2 Air Dot Files
 
+## [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
+
+[goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
+[json -> goku](https://github.com/yqrashawn/GokuRakuJoudo/issues/34) reference this
+
+brew install yqrashawn/goku/goku
+
+```md
+# Karabiner Complex Configurations
+
+Kitty Tab Back:     WE -> Ctrl + Shift + Left
+Kitty Tab Forward:  ER -> Ctrl + Shift + Right
+FF Tab Back:        WE -> Cmd + Opt + Left
+FF Tab Forward:     ER -> Cmd + Opt + Right
+Vscode Back         UI -> Ctrl + -
+Vscode Forward      IO -> Ctrl + =
+FF Back             UI -> Cmd + Left 
+FF Forward          IO -> Cmd + Right
+Cycle Windows       DG -> Opt + Grave 
+Rectangle Left      JL -> Ctrl + Opt + Left 
+Rectangle Full      J; -> Ctrl + Opt + Enter 
+Rectangle Right     K; -> Ctrl + Opt + Right
+Vscode Left         DF -> Opt + 4
+Vscode Full         SD -> Opt + 5
+Vscode Right        L; -> Opt + 6
+Kitty Left          AS -> Opt + 1
+Kitty Full          FJ -> Opt + 2
+Kitty Right         JK -> Opt + 3
+FF Right            KL -> Opt + 9
+
+Caps Lock to Escape on tap, Control on press and hold
+Disable Cmd+H Hide
+= + delete -> forward delete  
+Map = to fn on hold
+Opt + Q + W -> Send clipboard to dictionary
+
+```
+
 ## VSCode Keyboard Layout Fix
 
 [Disable Alt Special Characters](https://stackoverflow.com/questions/11876485/how-to-disable-generating-special-characters-when-pressing-the-alta-optiona)
@@ -78,28 +116,6 @@ git clone https://github.com/zsh-users/zsh-history-substring-search ${ZSH_CUSTOM
 #Activate the plugin in ~/.zshrc:
 plugins=( [plugins...] zsh-history-substring-search)
 
-```
-
----
-
-## [Karabiner Elements](https://github.com/pqrs-org/Karabiner-Elements)
-
-[goku](https://github.com/yqrashawn/GokuRakuJoudo) For concise karabiner configuaration
-[json -> goku](https://github.com/yqrashawn/GokuRakuJoudo/issues/34) reference this
-
-brew install yqrashawn/goku/goku
-
-```md
-# Karabiner Complex Configurations
-
-Tab to Option on press and hold (map change workspace to option + number)
-Option + jkl; to arrow keys
-Caps Lock to Escape on tap, Control on press and hold
-Shift to Parens on tap
-Disable Cmd+H Hide
-Quit application by pressing Cmd+Q twice  
-= + delete simultanously = forward delete  
-Map = to fn on hold
 ```
 
 ---

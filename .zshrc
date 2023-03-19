@@ -28,7 +28,12 @@ export PATH=$PATH:/Users/zen/.local/bin
 export PATH="$PATH:/Users/zen/.foundry/bin"
 
 # Aliases
+
+# Python
 # alias python='python3'
+alias venv="python3 -m venv .venv"
+alias activate=". .venv/bin/activate"
+
 alias e='evcxr'
 alias y='yt-dlp'
 alias ggg='git commit -am "latest";git push origin main'
@@ -41,6 +46,7 @@ alias ph='code /Users/zen/.config/.phoenix.js'
 alias kc='code /Users/zen/.config/kitty/kitty.conf'
 
 # Change Directories 
+alias chat='python /Users/zen/dev/chatgpt-cli/chat.py'
 alias f='cd /Users/zen/dev/foam'
 alias c='cd /Users/zen/.config'
 alias p='cd /Users/zen/dev/pr'
@@ -66,6 +72,44 @@ alias coverage="forge coverage --report lcov"
 
 # ASDF
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+. /opt/homebrew/opt/asdf/libexec/asdf.sh
+
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
