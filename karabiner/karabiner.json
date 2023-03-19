@@ -765,32 +765,32 @@
               }
             ]
           },
-          {
-            "description": "Hold = to get fn",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "equal_sign",
-                  "modifiers": {
-                    "mandatory": [
-                      "any"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "fn"
-                  }
-                ],
-                "to_if_alone": [
-                  {
-                    "key_code": "equal_sign"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
+          // {
+          //   "description": "Hold = to get fn",
+          //   "manipulators": [
+          //     {
+          //       "from": {
+          //         "key_code": "equal_sign",
+          //         "modifiers": {
+          //           "mandatory": [
+          //             "any"
+          //           ]
+          //         }
+          //       },
+          //       "to": [
+          //         {
+          //           "key_code": "fn"
+          //         }
+          //       ],
+          //       "to_if_alone": [
+          //         {
+          //           "key_code": "equal_sign"
+          //         }
+          //       ],
+          //       "type": "basic"
+          //     }
+          //   ]
+          // },
           {
             "description": "Option+q copies to clipboard",
             "manipulators": [
