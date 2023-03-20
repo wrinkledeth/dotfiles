@@ -46,7 +46,6 @@ alias ph='code /Users/zen/.config/.phoenix.js'
 alias kc='code /Users/zen/.config/kitty/kitty.conf'
 
 # Change Directories 
-alias chat='python /Users/zen/dev/chatgpt-cli/chat.py'
 alias f='cd /Users/zen/dev/foam'
 alias c='cd /Users/zen/.config'
 alias p='cd /Users/zen/dev/pr'
@@ -57,11 +56,6 @@ alias rc='cd /Users/zen/dev/pr/BLS-TSS-Network/contracts'
 alias staking='cd /Users/zen/dev/pr/staking-v0.1'
 
 # Forge
-# alias fw="forge test --gas-price 1000000000 --watch --run-all"
-# alias ft="forge test --gas-price 1000000000 --watch -vvv --match-test"
-# alias tt="forge test --gas-price 1000000000 --match-contract SolidityTest -vvv -w"
-# alias coverage="forge coverage --gas-price 1000000000 --report lcov"
-
 alias fw="forge test --watch --run-all"
 alias ft="forge test --watch -vvv --match-test"
 alias tt="forge test --match-contract SolidityTest -vvv -w"
@@ -70,80 +64,9 @@ alias coverage="forge coverage --report lcov"
 # PROMPT="$PROMPT
 # %F{red}∴%f "
 
+# AI Chat
+# alias chat='python /Users/zen/dev/chatgpt-cli/chat.py'
+alias aichat='/Users/zen/.asdf/installs/rust/1.68/bin/aichat'
+
 # ASDF
-echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
-. /opt/homebrew/opt/asdf/libexec/asdf.sh
-
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
