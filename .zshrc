@@ -66,7 +66,11 @@ alias coverage="forge coverage --report lcov"
 
 # AI Chat
 # alias chat='python /Users/zen/dev/chatgpt-cli/chat.py'
-alias aichat='/Users/zen/.asdf/installs/rust/1.68/bin/aichat'
+alias ai='/Users/zen/.asdf/installs/rust/1.68/bin/aichat'
+alias aic='code /Users/zen/Library/Application\ Support/aichat/config.yaml'
+alias air='code /Users/zen/Library/Application\ Support/aichat/roles.yaml'
+alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
+
 
 # ASDF
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
