@@ -17,6 +17,37 @@
         },
         "rules": [
           {
+            "description": "dc -> vscode comment",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "c"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "slash",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "signal",
             "manipulators": [
               {
