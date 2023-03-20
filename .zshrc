@@ -44,6 +44,8 @@ alias z='code ~/.zshrc'
 alias ka='code /Users/zen/.config/karabiner/karabiner.json'
 alias ph='code /Users/zen/.config/.phoenix.js'
 alias kc='code /Users/zen/.config/kitty/kitty.conf'
+alias v='code /Users/zen/.config/vscode_mac_hotkeys.md'
+
 
 # Change Directories 
 alias f='cd /Users/zen/dev/foam'
@@ -70,6 +72,7 @@ alias ai='/Users/zen/.asdf/installs/rust/1.68/bin/aichat'
 alias aic='code /Users/zen/Library/Application\ Support/aichat/config.yaml'
 alias air='code /Users/zen/Library/Application\ Support/aichat/roles.yaml'
 alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
+
 
 
 # ASDF
