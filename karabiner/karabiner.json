@@ -765,32 +765,55 @@
               }
             ]
           },
-          // {
-          //   "description": "Hold = to get fn",
-          //   "manipulators": [
-          //     {
-          //       "from": {
-          //         "key_code": "equal_sign",
-          //         "modifiers": {
-          //           "mandatory": [
-          //             "any"
-          //           ]
-          //         }
-          //       },
-          //       "to": [
-          //         {
-          //           "key_code": "fn"
-          //         }
-          //       ],
-          //       "to_if_alone": [
-          //         {
-          //           "key_code": "equal_sign"
-          //         }
-          //       ],
-          //       "type": "basic"
-          //     }
-          //   ]
-          // },
+          {
+            "description": "Map Shift + Backspace to Forward Delete",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "key_code": "delete_or_backspace",
+                  "modifiers": {
+                    "mandatory": [
+                      "shift"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_forward"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "description": "Map = and Backspace to Forward Delete",
+            "manipulators": [
+              {
+                "type": "basic",
+                "from": {
+                  "simultaneous": [
+                    {
+                      "key_code": "equal_sign"
+                    },
+                    {
+                      "key_code": "delete_or_backspace"
+                    }
+                  ],
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "delete_forward"
+                  }
+                ]
+              }
+            ]
+          },
           {
             "description": "Option+q copies to clipboard",
             "manipulators": [
@@ -830,6 +853,87 @@
                 "to": [
                   {
                     "shell_command": "/opt/homebrew/bin/python3 /Users/zen/.config/copy_dict.py"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change left_option + jkl; to arrow keys",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "j",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_option"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "left_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "k",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_option"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "down_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "l",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_option"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "up_arrow"
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "semicolon",
+                  "modifiers": {
+                    "mandatory": [
+                      "left_option"
+                    ],
+                    "optional": [
+                      "any"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "right_arrow"
                   }
                 ],
                 "type": "basic"
