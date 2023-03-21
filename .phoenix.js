@@ -87,8 +87,6 @@ quakeApp({
   followsMouse: true,
   hideOnBlur: false,
 });
-
-
 quakeApp({
   key: "4",
   modifiers: ["alt"],
@@ -159,6 +157,14 @@ quakeApp({
   key: "=",
   modifiers: ["alt"],
   appName: "Slack",
+  position: full,
+  followsMouse: true,
+  hideOnBlur: false,
+});
+quakeApp({
+  key: "0",
+  modifiers: ["alt"],
+  appName: "Voov",
   position: full,
   followsMouse: true,
   hideOnBlur: false,

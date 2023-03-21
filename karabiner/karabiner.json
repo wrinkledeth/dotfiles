@@ -110,6 +110,37 @@
             ]
           },
           {
+            "description": "voov",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "3"
+                    },
+                    {
+                      "key_code": "4"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "0",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "KITTY PANE FORWARD",
             "manipulators": [
               {
