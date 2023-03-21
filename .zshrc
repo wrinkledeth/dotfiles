@@ -60,7 +60,6 @@ alias staking='cd /Users/zen/dev/pr/staking-v0.1'
 # Forge
 alias fw="forge test --watch --run-all"
 alias ft="forge test --watch -vvv --match-test"
-alias tt="forge test --match-contract SolidityTest -vvv -w"
 alias coverage="forge coverage --report lcov"
 
 # PROMPT="$PROMPT
