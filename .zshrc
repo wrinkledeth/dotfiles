@@ -72,7 +72,5 @@ alias aic='code /Users/zen/Library/Application\ Support/aichat/config.yaml'
 alias air='code /Users/zen/Library/Application\ Support/aichat/roles.yaml'
 alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
 
-
-
 # ASDF
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
