@@ -141,7 +141,7 @@ quakeApp({
   key: "a",
   modifiers: ["alt"],
   appName: "Anki",
-  position: full,
+  position: leftHalf,
   followsMouse: true,
   hideOnBlur: false,
 });

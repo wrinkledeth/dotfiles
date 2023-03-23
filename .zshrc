@@ -54,6 +54,7 @@ alias p='cd /Users/zen/dev/pr'
 alias r='cd /Users/zen/dev/rust'
 alias sc='cd /Users/zen/dev/sc'
 alias rpr='cd /Users/zen/dev/sc/rpr'
+alias ac='cd /Users/zen/Library/Application\ Support/Anki2/Zen/collection.media'
 alias rc='cd /Users/zen/dev/pr/BLS-TSS-Network/contracts'
 alias staking='cd /Users/zen/dev/pr/staking-v0.1'
 

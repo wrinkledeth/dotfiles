@@ -7,28 +7,26 @@
 
 brew install yqrashawn/goku/goku
 
+| Description                  | From       | To             |
+| ----------------------------| ---------- | --------------|
+| VSCode comment               | d + c      | cmd + /        |
+| Signal                       | 1 + 2      | opt + -        |
+| Slack                        | 2 + 3      | opt + =        |
+| Voov                         | 3 + 4      | opt + 0        |
+| Anki                         | a + z      | opt + a        |
+| Kitty pane forward           | c + v      | ctrl + shift + ]|
+| Kitty pane back              | x + c      | ctrl + shift + [|
+| Kitty tab back               | w + e      | ctrl + shift + left arrow|
+| Kitty tab forward            | e + r      | ctrl + shift + right arrow|
+| Signal tab back              | w + e      | cmd + opt + up arrow|
+| Signal tab forward           | e + r      | cmd + opt + down arrow|
+| Firefox tab back             | w + e      | cmd + opt + left arrow|
+| Firefox tab forward          | e + r      | cmd + opt + right arrow|
+| VSCode back                  | x + c      | ctrl + -       |
+| VSCode forward               | c + v      | ctrl + =       |
+
 ```md
 # Karabiner Complex Configurations
-
-Kitty Tab Back:     WE -> Ctrl + Shift + Left
-Kitty Tab Forward:  ER -> Ctrl + Shift + Right
-FF Tab Back:        WE -> Cmd + Opt + Left
-FF Tab Forward:     ER -> Cmd + Opt + Right
-Vscode Back         UI -> Ctrl + -
-Vscode Forward      IO -> Ctrl + =
-FF Back             UI -> Cmd + Left 
-FF Forward          IO -> Cmd + Right
-Cycle Windows       DG -> Opt + Grave 
-Rectangle Left      JL -> Ctrl + Opt + Left 
-Rectangle Full      J; -> Ctrl + Opt + Enter 
-Rectangle Right     K; -> Ctrl + Opt + Right
-Vscode Left         DF -> Opt + 4
-Vscode Full         SD -> Opt + 5
-Vscode Right        L; -> Opt + 6
-Kitty Left          AS -> Opt + 1
-Kitty Full          FJ -> Opt + 2
-Kitty Right         JK -> Opt + 3
-FF Right            KL -> Opt + 9
 
 Caps Lock to Escape on tap, Control on press and hold
 Disable Cmd+H Hide
@@ -37,6 +35,8 @@ Map = to fn on hold
 Opt + Q + W -> Send clipboard to dictionary
 
 ```
+
+
 
 ## VSCode Keyboard Layout Fix
 

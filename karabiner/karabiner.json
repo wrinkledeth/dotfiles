@@ -141,6 +141,37 @@
             ]
           },
           {
+            "description": "anki",
+            "manipulators": [
+              {
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "a"
+                    },
+                    {
+                      "key_code": "z"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "a",
+                    "modifiers": [
+                      "left_option"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "KITTY PANE FORWARD",
             "manipulators": [
               {
@@ -160,10 +191,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     },
                     {
-                      "key_code": "o"
+                      "key_code": "v"
                     }
                   ]
                 },
@@ -200,10 +231,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "u"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     }
                   ]
                 },
@@ -464,10 +495,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "u"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     }
                   ]
                 },
@@ -503,10 +534,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     },
                     {
-                      "key_code": "o"
+                      "key_code": "v"
                     }
                   ]
                 },
@@ -542,10 +573,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "u"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     }
                   ]
                 },
@@ -581,10 +612,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "i"
+                      "key_code": "c"
                     },
                     {
-                      "key_code": "o"
+                      "key_code": "v"
                     }
                   ]
                 },
