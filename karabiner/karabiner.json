@@ -191,10 +191,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "v"
+                      "key_code": "c"
                     }
                   ]
                 },
@@ -231,10 +231,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "x"
+                      "key_code": "z"
                     },
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     }
                   ]
                 },
@@ -495,10 +495,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "x"
+                      "key_code": "z"
                     },
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     }
                   ]
                 },
@@ -534,10 +534,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "v"
+                      "key_code": "c"
                     }
                   ]
                 },
@@ -546,6 +546,84 @@
                     "key_code": "equal_sign",
                     "modifiers": [
                       "left_control"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Finder BACK",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.apple.finder"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "z"
+                    },
+                    {
+                      "key_code": "x"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "open_bracket",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Finder FORWARD",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.apple.finder"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "x"
+                    },
+                    {
+                      "key_code": "c"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "close_bracket",
+                    "modifiers": [
+                      "command"
                     ]
                   }
                 ],
@@ -573,10 +651,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "x"
+                      "key_code": "z"
                     },
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     }
                   ]
                 },
@@ -612,10 +690,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "c"
+                      "key_code": "x"
                     },
                     {
-                      "key_code": "v"
+                      "key_code": "c"
                     }
                   ]
                 },

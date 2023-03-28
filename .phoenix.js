@@ -149,7 +149,7 @@ quakeApp({
   key: "-",
   modifiers: ["alt"],
   appName: "Signal",
-  position: full,
+  position: leftHalf,
   followsMouse: true,
   hideOnBlur: false,
 });
@@ -157,7 +157,7 @@ quakeApp({
   key: "=",
   modifiers: ["alt"],
   appName: "Slack",
-  position: full,
+  position: leftHalf,
   followsMouse: true,
   hideOnBlur: false,
 });
