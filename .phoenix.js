@@ -66,7 +66,7 @@ const full = {
 quakeApp({
   key: "1",
   modifiers: ["alt"],
-  appName: "kitty",
+  appName: "iTerm2",
   position: leftHalf,
   followsMouse: true,
   hideOnBlur: false,

@@ -710,7 +710,7 @@
             ]
           },
           {
-            "description": "CYCLE WINDOWS OF SAME TYPE)",
+            "description": "CYCLE WINDOWS OF SAME TYPE",
             "manipulators": [
               {
                 "from": {
@@ -930,7 +930,7 @@
             ]
           },
           {
-            "description": "KITTY LEFT",
+            "description": "iterm2 right (AI Chat)",
             "manipulators": [
               {
                 "from": {
@@ -1170,18 +1170,31 @@
             ]
           },
           {
-            "description": "Option+W sends clipboard to dictionary",
+            "description": "DV sends clipboard to dictionary",
             "manipulators": [
               {
                 "from": {
-                  "key_code": "w",
                   "modifiers": {
-                    "mandatory": [
-                      "left_option"
+                    "optional": [
+                      "any"
                     ]
-                  }
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "d"
+                    },
+                    {
+                      "key_code": "v"
+                    }
+                  ]
                 },
                 "to": [
+                  {
+                    "key_code": "c",
+                    "modifiers": [
+                      "command"
+                    ]
+                  },
                   {
                     "shell_command": "/opt/homebrew/bin/python3 /Users/zen/.config/copy_dict.py"
                   }

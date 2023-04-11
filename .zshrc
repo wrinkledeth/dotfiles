@@ -34,6 +34,8 @@ export PATH="$PATH:/Users/zen/.foundry/bin"
 alias venv="python3 -m venv .venv"
 alias activate=". .venv/bin/activate"
 
+# Random
+alias btc='open /System/Library/Image\ Capture/Devices/VirtualScanner.app/Contents/Resources/simpledoc.pdf'
 alias e='evcxr'
 alias y='yt-dlp'
 alias ggg='git commit -am "latest";git push origin main'
@@ -56,6 +58,7 @@ alias sc='cd /Users/zen/dev/sc'
 alias rpr='cd /Users/zen/dev/sc/rpr'
 alias ac='cd /Users/zen/Library/Application\ Support/Anki2/Zen/collection.media'
 alias rc='cd /Users/zen/dev/pr/BLS-TSS-Network/contracts'
+alias bn='cd /Users/zen/dev/pr/BLS-TSS-Network/crates/threshold-bls/src/curve'
 alias staking='cd /Users/zen/dev/pr/staking-v0.1'
 
 # Forge
@@ -75,3 +78,7 @@ alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
 
 # ASDF
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
+
+# utf 8 fix? https://github.com/kovidgoyal/kitty/issues/1176kj
+export LANG="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
