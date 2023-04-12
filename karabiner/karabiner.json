@@ -1096,27 +1096,27 @@
               }
             ]
           },
-          {
-            "description": "Map Shift + Backspace to Forward Delete",
-            "manipulators": [
-              {
-                "type": "basic",
-                "from": {
-                  "key_code": "delete_or_backspace",
-                  "modifiers": {
-                    "mandatory": [
-                      "shift"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ]
-              }
-            ]
-          },
+          // {
+          //   "description": "Map Shift + Backspace to Forward Delete",
+          //   "manipulators": [
+          //     {
+          //       "type": "basic",
+          //       "from": {
+          //         "key_code": "delete_or_backspace",
+          //         "modifiers": {
+          //           "mandatory": [
+          //             "shift"
+          //           ]
+          //         }
+          //       },
+          //       "to": [
+          //         {
+          //           "key_code": "delete_forward"
+          //         }
+          //       ]
+          //     }
+          //   ]
+          // },
           {
             "description": "Map = and Backspace to Forward Delete",
             "manipulators": [
@@ -1145,32 +1145,32 @@
               }
             ]
           },
+          // {
+          //   "description": "Option+q copies to clipboard",
+          //   "manipulators": [
+          //     {
+          //       "from": {
+          //         "key_code": "q",
+          //         "modifiers": {
+          //           "mandatory": [
+          //             "left_option"
+          //           ]
+          //         }
+          //       },
+          //       "to": [
+          //         {
+          //           "key_code": "c",
+          //           "modifiers": [
+          //             "command"
+          //           ]
+          //         }
+          //       ],
+          //       "type": "basic"
+          //     }
+          //   ]
+          // },
           {
-            "description": "Option+q copies to clipboard",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "q",
-                  "modifiers": {
-                    "mandatory": [
-                      "left_option"
-                    ]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "c",
-                    "modifiers": [
-                      "command"
-                    ]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "DV sends clipboard to dictionary",
+            "description": "SF sends clipboard to dictionary",
             "manipulators": [
               {
                 "from": {
@@ -1181,10 +1181,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "d"
+                      "key_code": "s"
                     },
                     {
-                      "key_code": "v"
+                      "key_code": "f"
                     }
                   ]
                 },
