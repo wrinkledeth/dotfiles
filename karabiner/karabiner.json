@@ -1096,27 +1096,53 @@
               }
             ]
           },
-          // {
-          //   "description": "Map Shift + Backspace to Forward Delete",
-          //   "manipulators": [
-          //     {
-          //       "type": "basic",
-          //       "from": {
-          //         "key_code": "delete_or_backspace",
-          //         "modifiers": {
-          //           "mandatory": [
-          //             "shift"
-          //           ]
-          //         }
-          //       },
-          //       "to": [
-          //         {
-          //           "key_code": "delete_forward"
-          //         }
-          //       ]
-          //     }
-          //   ]
-          // },
+          {
+            "description": "Make cmd+q comb just turn the caps lock key, and make cmd+shift+q map to cmd+q (quit app)",
+            "manipulators": [
+              {
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "mandatory": [
+                      "command",
+                      "left_shift"
+                    ],
+                    "optional": [
+                      "caps_lock"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "q",
+                    "modifiers": [
+                      "command"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              },
+              {
+                "from": {
+                  "key_code": "q",
+                  "modifiers": {
+                    "mandatory": [
+                      "command"
+                    ],
+                    "optional": [
+                      "caps_lock"
+                    ]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "q"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
           {
             "description": "Map = and Backspace to Forward Delete",
             "manipulators": [
@@ -1145,30 +1171,6 @@
               }
             ]
           },
-          // {
-          //   "description": "Option+q copies to clipboard",
-          //   "manipulators": [
-          //     {
-          //       "from": {
-          //         "key_code": "q",
-          //         "modifiers": {
-          //           "mandatory": [
-          //             "left_option"
-          //           ]
-          //         }
-          //       },
-          //       "to": [
-          //         {
-          //           "key_code": "c",
-          //           "modifiers": [
-          //             "command"
-          //           ]
-          //         }
-          //       ],
-          //       "type": "basic"
-          //     }
-          //   ]
-          // },
           {
             "description": "SF sends clipboard to dictionary",
             "manipulators": [
