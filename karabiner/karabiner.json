@@ -1136,7 +1136,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "q"
+                    "key_code": "f13"
                   }
                 ],
                 "type": "basic"
