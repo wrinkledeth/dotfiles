@@ -17,6 +17,54 @@
         },
         "rules": [
           {
+            "description": "LCtrl => LCommand [vmware]",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.vmware.horizon"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_control"
+                },
+                "to": [
+                  {
+                    "key_code": "left_command"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "LCommand => LCtrl [vmware]",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.vmware.horizon"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "left_command"
+                },
+                "to": [
+                  {
+                    "key_code": "left_control"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "dc -> vscode comment",
             "manipulators": [
               {
