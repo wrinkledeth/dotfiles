@@ -380,6 +380,86 @@
             ]
           },
           {
+            "description": "iterm tab forward",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.googlecode.iterm2"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "e"
+                    },
+                    {
+                      "key_code": "r"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "close_bracket",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "iterm tab back",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "bundle_identifiers": [
+                      "com.googlecode.iterm2"
+                    ],
+                    "type": "frontmost_application_if"
+                  }
+                ],
+                "from": {
+                  "modifiers": {
+                    "optional": [
+                      "any"
+                    ]
+                  },
+                  "simultaneous": [
+                    {
+                      "key_code": "w"
+                    },
+                    {
+                      "key_code": "e"
+                    }
+                  ]
+                },
+                "to": [
+                  {
+                    "key_code": "open_bracket",
+                    "modifiers": [
+                      "left_command",
+                      "left_shift"
+                    ]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "SIGNAL TAB BACK",
             "manipulators": [
               {
@@ -978,7 +1058,7 @@
             ]
           },
           {
-            "description": "iterm2 right (AI Chat)",
+            "description": "iterm2 left (AI Chat)",
             "manipulators": [
               {
                 "from": {
@@ -1220,7 +1300,7 @@
             ]
           },
           {
-            "description": "SF sends clipboard to dictionary",
+            "description": "QW sends clipboard to dictionary",
             "manipulators": [
               {
                 "from": {
@@ -1231,10 +1311,10 @@
                   },
                   "simultaneous": [
                     {
-                      "key_code": "s"
+                      "key_code": "q"
                     },
                     {
-                      "key_code": "f"
+                      "key_code": "w"
                     }
                   ]
                 },

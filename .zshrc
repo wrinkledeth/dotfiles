@@ -76,6 +76,12 @@ alias aic='code /Users/zen/Library/Application\ Support/aichat/config.yaml'
 alias air='code /Users/zen/Library/Application\ Support/aichat/roles.yaml'
 alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
 
+# Termpdf
+alias manga='source /Users/zen/dev/_/termpdf.py/.venv/bin/activate && /Users/zen/dev/_/termpdf.py/termpdf.py '
+
+# gpt4free
+alias gpt4free='docker run -d -p 8501:8501 gpt4free:latest'
+
 # ASDF
 . /opt/homebrew/opt/asdf/libexec/asdf.sh
 
