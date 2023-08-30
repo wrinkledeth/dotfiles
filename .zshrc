@@ -135,5 +135,7 @@ alias off="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2
 # Highlight grep results
 # alias grep='ggrep --color=auto'export GOROOT=/opt/homebrew/bin/go
 
-# golang goroot homebrew
-export GOROOT=/opt/homebrew/bin/go
+# golang goroot homebrew (https://jimkang.medium.com/install-go-on-mac-with-homebrew-5fa421fc55f5)
+export GOPATH=$HOME/go
+export GOROOT="$(brew --prefix golang)/libexec"
+export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
