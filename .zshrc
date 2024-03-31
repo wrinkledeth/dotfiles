@@ -35,11 +35,11 @@ export PATH="$PATH:/Users/zen/.foundry/bin"
 alias venv="python3 -m venv .venv"
 alias activate=". .venv/bin/activate"
 
-# Exa
-alias ls='exa'
-alias ll='exa -lh'
-alias la='exa -la'
-alias lt='exa -lahT'
+# eza
+alias ls='eza'
+alias ll='eza -lh'
+alias la='eza -la'
+alias lt='eza -lahT'
 
 # Random
 alias btc='open /System/Library/Image\ Capture/Devices/VirtualScanner.app/Contents/Resources/simpledoc.pdf'
@@ -61,7 +61,7 @@ alias iina='open -a IINA'
 # Change Directories 
 alias j='/Users/zen/Movies/youtube/jazz'
 alias t='cd /Users/zen//Movies/torrents'
-alias y='cd /Users/zen/Movies/youtube'
+# alias y='cd /Users/zen/Movies/youtube'
 alias a='cd /Users/zen/dev/ai'
 alias f='cd /Users/zen/dev/foam'
 alias c='cd /Users/zen/.config'
@@ -72,6 +72,7 @@ alias ac='cd /Users/zen/Library/Application\ Support/Anki2/Zen/collection.media'
 alias arpa='cd /Users/zen/dev/arpa'
 alias rc='cd /Users/zen/dev/arpa/BLS-TSS-Network/contracts'
 alias staking='cd /Users/zen/dev/pr/staking-v0.1'
+alias y='cd /Users/zen/Movies/youtube/music'
 
 # Forge
 alias fw="forge test --watch --run-all"
@@ -83,7 +84,7 @@ alias coverage="forge coverage --report lcov"
 
 # AI Chat
 # alias chat='python /Users/zen/dev/chatgpt-cli/chat.py'
-alias ai='/Users/zen/.asdf/installs/rust/1.68/bin/aichat'
+alias ai='/Users/zen/.asdf/installs/rust/1.70/bin/aichat'
 alias aic='code /Users/zen/Library/Application\ Support/aichat/config.yaml'
 alias air='code /Users/zen/Library/Application\ Support/aichat/roles.yaml'
 alias aim='code /Users/zen/Library/Application\ Support/aichat/messages.md'
@@ -119,18 +120,21 @@ alias di='docker images'
 export DOCKER_DEFAULT_PLATFORM=linux/amd64
 
 # Anki working directory
-alias anki="code /Users/zen/dev/foam/_"
+# alias anki="open /Users/zen/dev/anki_utils/anki_build/.venv/bin/anki"
 alias ec2="cd /Users/zen/dev/arpa/contract-dev-iac"
 
 # Screen stuff
-alias son="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 screenOn ssl &> /dev/null && deactivate"
-alias soff="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 screenOff ssl && deactivate"
-alias on="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 on ssl &> /dev/null && deactivate"
-alias off="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 off ssl && deactivate"
+# alias son="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 screenOn ssl &> /dev/null && deactivate"
+# alias soff="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 screenOff ssl && deactivate"
+# alias on="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 on ssl &> /dev/null && deactivate"
+# alias off="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2 off ssl && deactivate"
 # # switch to input hdmi2
 # alias hdmi2="source ~/opt/lgtv/bin/activate && lgtv c2 setInput HDMI_2 ssl && deactivate"
 # # switch to input hdmi3
 # alias hdmi3="source ~/opt/lgtv/bin/activate && lgtv c2 setInput HDMI_3 ssl && deactivate"
+
+# Metranome
+alias m="python3 /Users/zen/dev/_/metranome-cli/metranome.py --no-video --strong 1200 --weak 1200 --bpm"
 
 # Highlight grep results
 # alias grep='ggrep --color=auto'export GOROOT=/opt/homebrew/bin/go
@@ -139,3 +143,13 @@ alias off="source ~/.lgtv/lgtv/bin/activate && /Users/zen/.lgtv/lgtv/bin/lgtv c2
 export GOPATH=$HOME/go
 export GOROOT="$(brew --prefix golang)/libexec"
 export PATH="$PATH:${GOPATH}/bin:${GOROOT}/bin"
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /opt/homebrew/bin/terraform terraform
+
+# Terraform 
+alias tf="terraform"
+
+## AI 
+alias lcpp="/Users/zen/dev/ai/llama.cpp/main"
+alias mixtral="/Users/zen/dev/ai/llama.cpp/main -m /Users/zen/dev/ai/models/mixtral-instruct-8x7b-q2k.gguf -n 400 -e --color -i  --log-disable -p"eval "$(mise activate zsh)"

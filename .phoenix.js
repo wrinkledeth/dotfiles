@@ -106,7 +106,7 @@ quakeApp({
 quakeApp({
   key: "6",
   modifiers: ["alt"],
-  appName: "Code",
+  appName: "Google Chrome",
   position: rightHalf,
   followsMouse: true,
   hideOnBlur: false,
@@ -138,7 +138,7 @@ quakeApp({
 });
 
 quakeApp({
-  key: "a",
+  key: "o",
   modifiers: ["alt"],
   appName: "Anki",
   position: rightHalf,
