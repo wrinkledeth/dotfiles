@@ -153,3 +153,7 @@ alias tf="terraform"
 ## AI 
 alias lcpp="/Users/zen/dev/ai/llama.cpp/main"
 alias mixtral="/Users/zen/dev/ai/llama.cpp/main -m /Users/zen/dev/ai/models/mixtral-instruct-8x7b-q2k.gguf -n 400 -e --color -i  --log-disable -p"eval "$(mise activate zsh)"
+
+
+## qmk 
+alias q='code ~/qmk_firmware/keyboards/handwired/dactyl_promicro/keymaps/mike/config.h ~/qmk_firmware/keyboards/handwired/dactyl_promicro/keymaps/mike/keymap.c ~/qmk_firmware/keyboards/handwired/dactyl_promicro/rules.mk'

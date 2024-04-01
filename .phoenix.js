@@ -74,7 +74,7 @@ quakeApp({
 quakeApp({
   key: "2",
   modifiers: ["alt"],
-  appName: "kitty",
+  appName: "Code",
   position: full,
   followsMouse: true,
   hideOnBlur: false,
@@ -106,7 +106,7 @@ quakeApp({
 quakeApp({
   key: "6",
   modifiers: ["alt"],
-  appName: "Google Chrome",
+  appName: "Code",
   position: rightHalf,
   followsMouse: true,
   hideOnBlur: false,
