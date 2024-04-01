@@ -879,163 +879,195 @@
                     //
                     //! Firefox / Vscode Tabs (no frontmost filter)
                     {
-                        "description": "TAB BACK",
+                        "description": "DEFAULT TAB BACK",
                         "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 12384
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
+                          {
+                            "conditions": [
+                              {
+                                "identifiers": [
+                                  {
+                                    "product_id": 12384
+                                  }
                                 ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "w"
-                                        },
-                                        {
-                                            "key_code": "f"
-                                        }
-                                    ]
+                                "type": "device_if"
+                              },
+                              {
+                                "bundle_identifiers": [
+                                    "net.kovidgoyal.kitty",
+                                    "com.googlecode.iterm2",
+                                    "org.whispersystems.signal-desktop"
+                                ],
+                                "type": "frontmost_application_unless"
+                              }
+                            ],
+                            "from": {
+                              "modifiers": {
+                                "optional": [
+                                  "any"
+                                ]
+                              },
+                              "simultaneous": [
+                                {
+                                  "key_code": "w"
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "command",
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
+                                {
+                                  "key_code": "f"
+                                }
+                              ]
                             },
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 12384
-                                            }
-                                        ],
-                                        "type": "device_unless"
-                                    }
+                            "to": [
+                              {
+                                "key_code": "left_arrow",
+                                "modifiers": [
+                                  "command",
+                                  "left_option"
+                                ]
+                              }
+                            ],
+                            "type": "basic"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "identifiers": [
+                                  {
+                                    "product_id": 12384
+                                  }
                                 ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "w"
-                                        },
-                                        {
-                                            "key_code": "e"
-                                        }
-                                    ]
+                                "type": "device_unless"
+                              },
+                              {
+                                "bundle_identifiers": [
+                                    "net.kovidgoyal.kitty",
+                                    "com.googlecode.iterm2",
+                                    "org.whispersystems.signal-desktop"
+                                ],
+                                "type": "frontmost_application_unless"
+                              }
+                            ],
+                            "from": {
+                              "modifiers": {
+                                "optional": [
+                                  "any"
+                                ]
+                              },
+                              "simultaneous": [
+                                {
+                                  "key_code": "w"
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
-                                        "modifiers": [
-                                            "command",
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
+                                {
+                                  "key_code": "e"
+                                }
+                              ]
+                            },
+                            "to": [
+                              {
+                                "key_code": "left_arrow",
+                                "modifiers": [
+                                  "command",
+                                  "left_option"
+                                ]
+                              }
+                            ],
+                            "type": "basic"
+                          }
                         ]
-                    },
-                    {
-                        "description": "TAB FORWARD",
+                      },
+                      {
+                        "description": "DEFAULT TAB FORWARD",
                         "manipulators": [
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 12384
-                                            }
-                                        ],
-                                        "type": "device_if"
-                                    }
+                          {
+                            "conditions": [
+                              {
+                                "identifiers": [
+                                  {
+                                    "product_id": 12384
+                                  }
                                 ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "f"
-                                        },
-                                        {
-                                            "key_code": "p"
-                                        }
-                                    ]
+                                "type": "device_if"
+                              },
+                              {
+                                "bundle_identifiers": [
+                                    "net.kovidgoyal.kitty",
+                                    "com.googlecode.iterm2",
+                                    "org.whispersystems.signal-desktop"
+                                ],
+                                "type": "frontmost_application_unless"
+                              }
+                            ],
+                            "from": {
+                              "modifiers": {
+                                "optional": [
+                                  "any"
+                                ]
+                              },
+                              "simultaneous": [
+                                {
+                                  "key_code": "f"
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "command",
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
+                                {
+                                  "key_code": "p"
+                                }
+                              ]
                             },
-                            {
-                                "conditions": [
-                                    {
-                                        "identifiers": [
-                                            {
-                                                "product_id": 12384
-                                            }
-                                        ],
-                                        "type": "device_unless"
-                                    }
+                            "to": [
+                              {
+                                "key_code": "right_arrow",
+                                "modifiers": [
+                                  "command",
+                                  "left_option"
+                                ]
+                              }
+                            ],
+                            "type": "basic"
+                          },
+                          {
+                            "conditions": [
+                              {
+                                "identifiers": [
+                                  {
+                                    "product_id": 12384
+                                  }
                                 ],
-                                "from": {
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    },
-                                    "simultaneous": [
-                                        {
-                                            "key_code": "e"
-                                        },
-                                        {
-                                            "key_code": "r"
-                                        }
-                                    ]
+                                "type": "device_unless"
+                              },
+                              {
+                                "bundle_identifiers": [
+                                    "net.kovidgoyal.kitty",
+                                    "com.googlecode.iterm2",
+                                    "org.whispersystems.signal-desktop"
+                                ],
+                                "type": "frontmost_application_unless"
+                              }
+                            ],
+                            "from": {
+                              "modifiers": {
+                                "optional": [
+                                  "any"
+                                ]
+                              },
+                              "simultaneous": [
+                                {
+                                  "key_code": "e"
                                 },
-                                "to": [
-                                    {
-                                        "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "command",
-                                            "left_option"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
+                                {
+                                  "key_code": "r"
+                                }
+                              ]
+                            },
+                            "to": [
+                              {
+                                "key_code": "right_arrow",
+                                "modifiers": [
+                                  "command",
+                                  "left_option"
+                                ]
+                              }
+                            ],
+                            "type": "basic"
+                          }
                         ]
-                    },
+                      },
                     //! kitty tabs
                     {
                         "description": "KITTY TAB BACK",
