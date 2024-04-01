@@ -1600,6 +1600,14 @@
                                             }
                                         ],
                                         "type": "device_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.apple.finder",
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -1636,6 +1644,14 @@
                                             }
                                         ],
                                         "type": "device_unless"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.apple.finder",
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -1677,6 +1693,14 @@
                                             }
                                         ],
                                         "type": "device_if"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.apple.finder",
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
@@ -1713,6 +1737,14 @@
                                             }
                                         ],
                                         "type": "device_unless"
+                                    },
+                                    {
+                                        "bundle_identifiers": [
+                                            "com.microsoft.VSCode",
+                                            "com.apple.finder",
+                                            "org.mozilla.firefox"
+                                        ],
+                                        "type": "frontmost_application_unless"
                                     }
                                 ],
                                 "from": {
